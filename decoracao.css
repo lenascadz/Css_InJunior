@@ -80,13 +80,44 @@ main h3{
 /* fim foto + textinho */
 /* hobbies + top 5 */
 
+.container-hobbies-musicas {
+    display: flex; /* Coloca os hobbies e as músicas lado a lado */
+    justify-content: center; /* Centraliza na tela */
+    align-items: flex-start; /* Mantém o topo alinhado */
+    gap: 20px; /* Espaçamento entre os dois grupos */
+    flex-wrap: wrap; /* Garante que se ajusta em telas menores */
+    width: 100%;
+}
+
+.hobbies, .musicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Garante que ambos ocupem espaços iguais */
+}
+
+.hobbies h3, .musicas h3 {
+    margin-bottom: 10px; /* Reduz o espaço abaixo do título */
+    text-align: center; /* Mantém centralizado */
+}
+
+.hobbies ul, .musicas ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* Garante alinhamento */
+}
+
+
+
 .informacoes ul {
     display: flex; /* Faz os cards ficarem lado a lado */
     flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    justify-content: center; /* Centraliza os cards */
     gap: 15px; /* Adiciona espaçamento entre os cards */
     list-style: none; /* Remove os marcadores da lista */
     padding: 0;
-    align-items: flex-start; /* Mantém todos os cards alinhados pelo topo */
+    align-items: stretch; /* Mantém todos os cards alinhados pelo topo */
 }
 
 .card {
@@ -127,9 +158,9 @@ main h3{
     left: 0;
     width: 100%; /* Faz o texto ocupar toda a largura do card */
     min-height: 20%; /* Garante um espaço mínimo para o texto */
-    background: rgba(190, 186, 186, 0.6); /* Fundo semi-transparente */
+    background: rgba(190, 186, 186, 0.387); /* Fundo semi-transparente */
     color: rgb(1, 1, 1); /* Cor do texto */
-    font-size: 12px; /* Ajuste para evitar que fique grande demais */
+    font-size: 13px; /* Ajuste para evitar que fique grande demais */
     padding: 3px 5px; /* Reduz o espaçamento interno para ocupar menos espaço */
     text-align: center; /* Centraliza o texto */
     display: flex;
