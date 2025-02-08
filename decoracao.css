@@ -5,6 +5,7 @@
 
 /* cabeçalho */
 header {
+    width: auto;
     height: 109px;
     background-color: #013D5A; 
     display: flex;
@@ -58,6 +59,7 @@ header nav a:hover {   /* opcional */
     font-weight: 400;
 }
 .sobremim {
+    width: auto;
     height: 318px;
     background-color:#BDD3CE;
     padding: 40px;
@@ -133,13 +135,13 @@ main h3{
     justify-content: center; /* Centraliza os cards */
     gap: 15px; /* Adiciona espaçamento entre os cards */
     list-style: none; /* Remove os marcadores da lista */
-    padding: 0;
+    padding: 30px;
     align-items: stretch; /* Mantém todos os cards alinhados pelo topo */
 }
 
 .card {
-    width: 125px; /* Tamanho fixo para os cards */
-    height: 173px; /* Define uma altura fixa */
+    width: 110px; /* Tamanho fixo para os cards */
+    height: 160px; /* Define uma altura fixa */
     background-color: #dfdfdf;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
@@ -220,7 +222,7 @@ main h3{
 }
   
 .form p {
-    width: 1358px; 
+    width: 1128px; 
     background-color: #BDD3CE;
     padding-bottom: 20px;
     border-radius: 4px;
