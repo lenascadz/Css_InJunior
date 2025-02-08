@@ -204,9 +204,9 @@ main h3{
 .feedback {
     background-color: #fcf3e3e6;
     height: 236px;
-    align-items: center;
+    text-align: left;
     font: alata;
-    padding: 70px; 
+    padding: 60px; 
   }
   
 .form {
@@ -214,15 +214,15 @@ main h3{
     flex-direction:column;
     padding: 30px;
     color: black;
-    font: alata;
+    font: Alata;
     font-weight: 400;
     font-size: 18px;
 }
   
 .form p {
-    width: 1128px; 
+    width: 1358px; 
     background-color: #BDD3CE;
-    /* padding-bottom: 20px; */
+    padding-bottom: 20px;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -234,6 +234,11 @@ main h3{
     padding: 20px;
     border-radius: 10px;
     font-weight: bold;
+    width: 100%;
+}
+
+.text-feedback{
+    width: 100%;
 }
   
 .enviar {
@@ -258,8 +263,7 @@ main h3{
 
 .input-feedback {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .input-feedback :hover {   /* botao de enviar */
