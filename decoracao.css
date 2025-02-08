@@ -80,6 +80,19 @@ main h3{
 /* fim foto + textinho */
 /* hobbies + top 5 */
 
+.informacoes h3 {
+    color: black;
+    font: alata;
+    font-weight: 400;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.informacoes {
+    height: 289px;
+    background-color: whitesmoke;
+  }
+
 .container-hobbies-musicas {
     display: flex; /* Coloca os hobbies e as músicas lado a lado */
     justify-content: center; /* Centraliza na tela */
@@ -121,8 +134,8 @@ main h3{
 }
 
 .card {
-    width: 102px; /* Tamanho fixo para os cards */
-    height: 150px; /* Define uma altura fixa */
+    width: 115px; /* Tamanho fixo para os cards */
+    height: 163px; /* Define uma altura fixa */
     background-color: #dfdfdf;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
@@ -158,7 +171,7 @@ main h3{
     left: 0;
     width: 100%; /* Faz o texto ocupar toda a largura do card */
     min-height: 20%; /* Garante um espaço mínimo para o texto */
-    background: rgba(190, 186, 186, 0.387); /* Fundo semi-transparente */
+    background: rgba(204, 199, 199, 0.772); /* Fundo semi-transparente */
     color: rgb(1, 1, 1); /* Cor do texto */
     font-size: 13px; /* Ajuste para evitar que fique grande demais */
     padding: 3px 5px; /* Reduz o espaçamento interno para ocupar menos espaço */
@@ -186,14 +199,14 @@ main h3{
 
 /* feedback */
 .feedback {
-    background-color:white;
+    background-color:whitesmoke;
     height: 236px;
     align-items: center;
     font: alata;
     padding: 70px; 
   }
   
-  .form {
+.form {
     display: flex;
     flex-direction:column;
     padding: 30px;
@@ -201,26 +214,26 @@ main h3{
     font: alata;
     font-weight: 400;
     font-size: 18px;
-  }
+}
   
-  .form p {
+.form p {
     width: 1128px; 
     background-color:rgba(185, 198, 218, 0.961);
     /* padding-bottom: 20px; */
     border-radius: 4px;
     display: flex;
     align-items: center;
-  }
+}
   
-  .feedback-block {
+.feedback-block {
     display: block;
     margin-bottom: 10px;
     padding: 20px;
     border-radius: 10px;
     font-weight: bold;
-  }
+}
   
-  .enviar {
+.enviar {
     background-color: rgba(117, 143, 181, 0.961);
     color: black;
     border: none;
@@ -230,8 +243,7 @@ main h3{
     width: 127px;
     left: 1149px;
     top: 989px;
-
-  }
+}
   
 .feedback h3{
     color: black;
@@ -240,6 +252,13 @@ main h3{
     font-size: 24px;
     font-weight: bold;
 }
+
+.input-feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .input-feedback :hover {   /* botao de enviar */
     text-decoration: underline;
     color: white; 
