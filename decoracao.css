@@ -6,7 +6,7 @@
 /* cabeçalho */
 header {
     height: 109px;
-    background-color: #4375a7cc; 
+    background-color: #013D5A; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,32 +15,36 @@ header {
 }
 
 header h1 {
-    color: black;
+    margin-left: 40px;
+    color: rgb(206, 116, 42);
     font: alata;
     font-weight: 400;
     font-size: 40px;
+    font-weight: bolder;
 }
 
 header nav a {
+    margin-right: 40px;
     width: 75px;
     height: 49px;
     font: alata;
     font-weight: 400;
     font-size: 24px;
-    color: black;
+    color: rgb(159, 99, 50);
     text-decoration: none;
+    font-weight: bold;
+    
 }
 
 header nav a:hover {   /* opcional */
-    text-decoration: underline;
     color: white; 
 }
 /* fim cabeçalho */
 
 /* foto + textinho */
 .foto img{
-    width: 247px;
-    height: 247px;
+    width: 265px;
+    height: 265px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
@@ -49,14 +53,14 @@ header nav a:hover {   /* opcional */
     height: 135px;
     top: 118px;
     left: 599px;
-    font-size: 16px;
+    font-size: 18px;
     font: alata;
     font-weight: 400;
 }
 .sobremim {
     height: 318px;
-    background-color:rgb(240, 248, 255);
-    padding: 32px;
+    background-color:#BDD3CE;
+    padding: 40px;
     gap: 125px;
     display: flex;
     flex-direction: row;
@@ -67,14 +71,14 @@ main h2{
     color: black;
     font: alata;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
 }
 main h3{
     color: black;
     font: alata;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* fim foto + textinho */
@@ -90,7 +94,7 @@ main h3{
 
 .informacoes {
     height: 289px;
-    background-color: whitesmoke;
+    background-color: #fcf3e3e6;
   }
 
 .container-hobbies-musicas {
@@ -134,8 +138,8 @@ main h3{
 }
 
 .card {
-    width: 115px; /* Tamanho fixo para os cards */
-    height: 163px; /* Define uma altura fixa */
+    width: 125px; /* Tamanho fixo para os cards */
+    height: 173px; /* Define uma altura fixa */
     background-color: #dfdfdf;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
@@ -145,7 +149,6 @@ main h3{
     justify-content: space-between;
     text-align: center;
     overflow: hidden; /* Evita que o conteúdo ultrapasse o card */
-    /* padding: 10px; */
 }
 .imagem-card {
     position:relative ; /* Define um ponto de referência para o texto */
@@ -171,7 +174,7 @@ main h3{
     left: 0;
     width: 100%; /* Faz o texto ocupar toda a largura do card */
     min-height: 20%; /* Garante um espaço mínimo para o texto */
-    background: rgba(204, 199, 199, 0.772); /* Fundo semi-transparente */
+    background: #fcf3e38a; /* Fundo semi-transparente */
     color: rgb(1, 1, 1); /* Cor do texto */
     font-size: 13px; /* Ajuste para evitar que fique grande demais */
     padding: 3px 5px; /* Reduz o espaçamento interno para ocupar menos espaço */
@@ -199,7 +202,7 @@ main h3{
 
 /* feedback */
 .feedback {
-    background-color:whitesmoke;
+    background-color: #fcf3e3e6;
     height: 236px;
     align-items: center;
     font: alata;
@@ -218,7 +221,7 @@ main h3{
   
 .form p {
     width: 1128px; 
-    background-color:rgba(185, 198, 218, 0.961);
+    background-color: #BDD3CE;
     /* padding-bottom: 20px; */
     border-radius: 4px;
     display: flex;
@@ -234,7 +237,7 @@ main h3{
 }
   
 .enviar {
-    background-color: rgba(117, 143, 181, 0.961);
+    background-color: #BDD3CE;
     color: black;
     border: none;
     padding: 10px;
@@ -261,17 +264,18 @@ main h3{
 
 .input-feedback :hover {   /* botao de enviar */
     text-decoration: underline;
-    color: white; 
+    color: #013D5A; 
 } 
 /* fim feedback */
 
 /* rodapé */
 footer {     /*rodape todo */
     height: 70px;
-    background-color: #4375a7cc;     
+    background-color: #013D5A;     
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     padding: 8px 16px;
     top: 1082px; 
     gap: 897px;
@@ -280,7 +284,7 @@ footer nav a {   /* contato */
     width: 162px;
     height: 38px;
     align-items: center;
-    background-color: #4375a765;
+    background-color: #1e546f;
     border-radius: 5px;
     font: alata;
     font-weight: 400;
@@ -294,6 +298,7 @@ footer nav a {   /* contato */
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 12px;
 }
 .instagram img{  /* redes */
     width: 32px;
@@ -312,8 +317,8 @@ footer nav a {   /* contato */
     height: 32px;
 }
 
-footer :hover {   /* contato */
-    text-decoration: underline;
-    color: white; 
+nav a:hover {   /* contato */
+    color: azure;    
+    background-color: rgb(152, 88, 37); 
 } 
 /* fim rodapé */
