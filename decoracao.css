@@ -18,11 +18,11 @@ header {
 
 header h1 {
     margin-left: 40px;
-    color: rgb(206, 116, 42);
+    /* color: rgb(206, 116, 42); */
+    color: #c74545;
     font: alata;
     font-weight: 400;
     font-size: 40px;
-    font-weight: bolder;
 }
 
 header nav a {
@@ -32,9 +32,8 @@ header nav a {
     font: alata;
     font-weight: 400;
     font-size: 24px;
-    color: rgb(159, 99, 50);
+    color: #bc5353;
     text-decoration: none;
-    font-weight: bold;
     
 }
 
@@ -192,17 +191,7 @@ main h3{
     word-wrap: break-word; /* Quebra o texto se necessário */
 }
 
-
-
-
-
-
-
-
-
 /* fim hobbies + top 5 */
-
-
 
 /* feedback */
 .feedback {
@@ -272,7 +261,7 @@ main h3{
 
 .input-feedback :hover {   /* botao de enviar */
     text-decoration: underline;
-    color: #013D5A; 
+    color: #c74545; 
 } 
 /* fim feedback */
 
@@ -327,6 +316,6 @@ footer nav a {   /* contato */
 
 nav a:hover {   /* contato */
     color: azure;    
-    background-color: rgb(152, 88, 37); 
+    background-color: #c74545; 
 } 
 /* fim rodapé */
