@@ -7,6 +7,7 @@
 header {
     width: auto;
     height: 109px;
+    overflow: hidden;
     background-color: #013D5A; 
     display: flex;
     flex-direction: row;
@@ -25,7 +26,7 @@ header h1 {
 }
 
 header nav a {
-    margin-right: 40px;
+    margin-right: 30px;
     width: 75px;
     height: 49px;
     font: alata;
@@ -95,8 +96,9 @@ main h3{
 }
 
 .informacoes {
-    height: 289px;
+    min-height: 289px;
     background-color: #fcf3e3e6;
+    padding: 30px 0px;
   }
 
 .container-hobbies-musicas {
@@ -205,10 +207,11 @@ main h3{
 /* feedback */
 .feedback {
     background-color: #fcf3e3e6;
-    height: 236px;
+    min-height: 236px;
+    width: ;
     text-align: left;
     font: alata;
-    padding: 60px; 
+    padding: 40px 60px; 
   }
   
 .form {
@@ -222,7 +225,6 @@ main h3{
 }
   
 .form p {
-    width: 1128px; 
     background-color: #BDD3CE;
     padding-bottom: 20px;
     border-radius: 4px;
@@ -280,11 +282,11 @@ footer {     /*rodape todo */
     background-color: #013D5A;     
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
-    top: 1082px; 
-    gap: 897px;
+    /* top: 1082px; 
+    gap: 897px; */
 }
 footer nav a {   /* contato */
     width: 162px;
