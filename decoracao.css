@@ -44,39 +44,17 @@ header nav a:hover {  /* opcional */
 
 
 /* foto + textinho */
-/* .sobremim {
-    width: auto;
-    min-height: 100vh;
-    background-color:#BDD3CE;
+.sobremim {
+    width:1,440px;
+    background-color: #BDD3CE;
     padding: 40px;
-    gap: 25px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 50px;
     text-align: center;
-    /* min-height: 100vh; 
-    overflow: hidden;} */
-
-.sobremim {
-        width:1,440px;
-        background-color: #BDD3CE;
-        padding: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        text-align: center;
-    }
-
-/* .foto img{
-    width: 265px;
-    height: 265px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);} */
-
-
+}
 .foto img {
     width: 200px;
     height: 200px;
@@ -87,16 +65,6 @@ header nav a:hover {  /* opcional */
     max-width: 600px;
     font-size: 18px;
 }
-
-/* .texto {
-    width: 614px;
-    height: 135px;
-    top: 118px;
-    left: 599px;
-    font-size: 18px;
-    font: alata;
-    font-weight: 400;
-} */
 
 
 main h2{
@@ -132,10 +100,10 @@ main h3{
   }
 
 .container-hobbies-musicas {
-    display: flex; /* colocar hobbies e músicas lado a lado */
+    display: flex; 
     justify-content: center; 
     align-items: flex-start; /
-    gap: 20px; /* espaço entre hobbie e musica */
+    gap: 15px; 
     flex-wrap: wrap; /* para telas menores */
     width: 100%;
 }
@@ -159,10 +127,8 @@ main h3{
     justify-content: center; /* alinhamento */
 }
 
-
-
 .informacoes ul {
-    display: flex; /* lado a lado */
+    display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
     gap: 22px; 
@@ -174,7 +140,6 @@ main h3{
 .card {
     width: 110px; 
     height: 160px; 
-    /* tamanho cards */
     background-color: #dfdfdf;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
@@ -199,7 +164,7 @@ main h3{
 .imagem-card img {
     width: 100%; 
     height: 100%; 
-    object-fit: cover; /* corta a imagem para caber no card sem distorcer */
+    object-fit: cover; 
     border-radius: 10px;
 }
   
@@ -207,8 +172,8 @@ main h3{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%; /* Faz o texto ocupar toda a largura do card */
-    min-height: 20%; /* garante espaço mínimo para o texto */
+    width: 100%; 
+    min-height: 20%; 
     background: #fcf3e38a; 
     color: rgb(1, 1, 1); 
     font-size: 13px; 
@@ -218,7 +183,7 @@ main h3{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; /* quebre do texto em várias linhas */
-    border-radius: 0 0 10px 10px; /* Mantém arredondamento na parte de baixo */
+    border-radius: 0 0 10px 10px; 
     overflow: hidden; /* Evita que o texto saia da área */
     word-wrap: break-word; /* Quebra o texto se necessário */
 }
@@ -298,7 +263,7 @@ main h3{
 
 
 /* rodapé */
-footer {     /*rodape todo */
+footer {     /* rodape todo */
     height: 70px;
     background-color: #013D5A;     
     display: flex;
@@ -354,24 +319,11 @@ nav a:hover {   /* contato */
 } 
 /* fim rodapé */
 
+
 /* -------------------------   RESPONSIVIDADE   ------------------------ */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
-    /* Ajustando o cabeçalho */
+    /* Header */
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -400,7 +352,7 @@ nav a:hover {   /* contato */
         font-size: 16px;
     }
 
-    /* Ajustando a seção de feedback */
+    /* Feedbacks */
     .feedback {
         padding: 20px;
     }
@@ -413,7 +365,7 @@ nav a:hover {   /* contato */
         justify-content: center;
     }
 
-    /* Footer responsivo */
+    /* Footer */
     footer {
         display: flex;
         flex-direction: column;
@@ -446,8 +398,7 @@ nav a:hover {   /* contato */
     }
 
     .redes img {
-        width: 45px; /* Ajuste no tamanho dos ícones */
+        width: 45px; 
         height: 45px;
     }
 }
-
