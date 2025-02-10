@@ -5,7 +5,7 @@
 
 /* cabeçalho */
 header {
-    width: auto;
+    width: 1,440px;
     height: 109px;
     overflow: hidden;
     background-color: #013D5A; 
@@ -27,29 +27,68 @@ header h1 {
 
 header nav a {
     margin-right: 30px;
-    width: 75px;
-    height: 49px;
+    /* width: 75px;
+    height: 49px; */
     font: alata;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 24px;
     color: #bc5353;
     text-decoration: none;
     
 }
 
-header nav a:hover {   /* opcional */
+header nav a:hover {  /* opcional */
     color: white; 
 }
 /* fim cabeçalho */
 
+
 /* foto + textinho */
-.foto img{
+/* .sobremim {
+    width: auto;
+    min-height: 100vh;
+    background-color:#BDD3CE;
+    padding: 40px;
+    gap: 25px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* min-height: 100vh; 
+    overflow: hidden;} */
+
+.sobremim {
+        width:1,440px;
+        background-color: #BDD3CE;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+    }
+
+/* .foto img{
     width: 265px;
     height: 265px;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);} */
+
+
+.foto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
+
 .texto {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+/* .texto {
     width: 614px;
     height: 135px;
     top: 118px;
@@ -57,18 +96,9 @@ header nav a:hover {   /* opcional */
     font-size: 18px;
     font: alata;
     font-weight: 400;
-}
-.sobremim {
-    width: auto;
-    height: 318px;
-    background-color:#BDD3CE;
-    padding: 40px;
-    gap: 125px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+} */
+
+
 main h2{
     color: black;
     font: alata;
@@ -76,16 +106,17 @@ main h2{
     font-size: 26px;
     font-weight: bold;
 }
+
 main h3{
     color: black;
     font: alata;
     font-weight: 400;
     font-size: 20px;
 }
-
 /* fim foto + textinho */
-/* hobbies + top 5 */
 
+
+/* hobbies + top 5 */
 .informacoes h3 {
     color: black;
     font: alata;
@@ -101,11 +132,11 @@ main h3{
   }
 
 .container-hobbies-musicas {
-    display: flex; /* Coloca os hobbies e as músicas lado a lado */
-    justify-content: center; /* Centraliza na tela */
-    align-items: flex-start; /* Mantém o topo alinhado */
-    gap: 20px; /* Espaçamento entre os dois grupos */
-    flex-wrap: wrap; /* Garante que se ajusta em telas menores */
+    display: flex; /* colocar hobbies e músicas lado a lado */
+    justify-content: center; 
+    align-items: flex-start; /
+    gap: 20px; /* espaço entre hobbie e musica */
+    flex-wrap: wrap; /* para telas menores */
     width: 100%;
 }
 
@@ -113,36 +144,37 @@ main h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1; /* Garante que ambos ocupem espaços iguais */
+    /* flex: 1; espaços iguais */
 }
 
 .hobbies h3, .musicas h3 {
-    margin-bottom: 10px; /* Reduz o espaço abaixo do título */
-    text-align: center; /* Mantém centralizado */
+    margin-bottom: 10px; 
+    text-align: center; 
 }
 
 .hobbies ul, .musicas ul {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center; /* Garante alinhamento */
+    justify-content: center; /* alinhamento */
 }
 
 
 
 .informacoes ul {
-    display: flex; /* Faz os cards ficarem lado a lado */
-    flex-wrap: wrap; /* Permite quebra de linha se necessário */
-    justify-content: center; /* Centraliza os cards */
-    gap: 15px; /* Adiciona espaçamento entre os cards */
-    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* lado a lado */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 22px; 
+    list-style: none; /* sem marcadores da lista */
     padding: 30px;
-    align-items: stretch; /* Mantém todos os cards alinhados pelo topo */
+    align-items: stretch; 
 }
 
 .card {
-    width: 110px; /* Tamanho fixo para os cards */
-    height: 160px; /* Define uma altura fixa */
+    width: 110px; 
+    height: 160px; 
+    /* tamanho cards */
     background-color: #dfdfdf;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
@@ -151,10 +183,11 @@ main h3{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    overflow: hidden; /* Evita que o conteúdo ultrapasse o card */
+    overflow: hidden; /* conteudo nao ultrapasse o tamanho */
 }
+
 .imagem-card {
-    position:relative ; /* Define um ponto de referência para o texto */
+    position:relative ; 
     width: 100%;
     height: auto;
     display: flex;
@@ -164,33 +197,31 @@ main h3{
 }
 
 .imagem-card img {
-    width: 100%; /* Ajusta a largura ao card */
-    height: 100%; /* Mantém altura proporcional */
-    object-fit: cover; /* Corta a imagem para caber no card sem distorcer */
-    border-radius: 10px; /* Mantém o arredondamento */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* corta a imagem para caber no card sem distorcer */
+    border-radius: 10px;
 }
-
   
 .texto-card {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%; /* Faz o texto ocupar toda a largura do card */
-    min-height: 20%; /* Garante um espaço mínimo para o texto */
-    background: #fcf3e38a; /* Fundo semi-transparente */
-    color: rgb(1, 1, 1); /* Cor do texto */
-    font-size: 13px; /* Ajuste para evitar que fique grande demais */
-    padding: 3px 5px; /* Reduz o espaçamento interno para ocupar menos espaço */
-    text-align: center; /* Centraliza o texto */
+    min-height: 20%; /* garante espaço mínimo para o texto */
+    background: #fcf3e38a; 
+    color: rgb(1, 1, 1); 
+    font-size: 13px; 
+    padding: 3px 5px; 
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que o texto quebre em várias linhas */
+    flex-wrap: wrap; /* quebre do texto em várias linhas */
     border-radius: 0 0 10px 10px; /* Mantém arredondamento na parte de baixo */
     overflow: hidden; /* Evita que o texto saia da área */
     word-wrap: break-word; /* Quebra o texto se necessário */
 }
-
 /* fim hobbies + top 5 */
 
 /* feedback */
@@ -265,6 +296,7 @@ main h3{
 } 
 /* fim feedback */
 
+
 /* rodapé */
 footer {     /*rodape todo */
     height: 70px;
@@ -274,9 +306,8 @@ footer {     /*rodape todo */
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
-    /* top: 1082px; 
-    gap: 897px; */
 }
+
 footer nav a {   /* contato */
     width: 162px;
     height: 38px;
@@ -290,13 +321,16 @@ footer nav a {   /* contato */
     text-decoration: none;
     padding: 16px 32px;
 }
+
 .redes{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 12px;
+
 }
+
 .instagram img{  /* redes */
     width: 32px;
     height: 32px;
@@ -319,3 +353,101 @@ nav a:hover {   /* contato */
     background-color: #c74545; 
 } 
 /* fim rodapé */
+
+/* -------------------------   RESPONSIVIDADE   ------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* Ajustando o cabeçalho */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 32px;
+    }
+
+    .sobremim {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .foto img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .texto {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    /* Ajustando a seção de feedback */
+    .feedback {
+        padding: 20px;
+    }
+
+    .feedback-block {
+        max-width: 100%;
+    }
+
+    .input-feedback {
+        justify-content: center;
+    }
+
+    /* Footer responsivo */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 28px;
+        gap: 28px;
+        background: #013D5A; 
+        border: 10px solid #013D5A;
+    }
+
+    footer nav a {
+        padding: 12px 32px;
+    }
+
+    .contato {
+        background: #D9D9D9;
+        padding: 12px 20px;
+        border-radius: 5px;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .redes {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .redes img {
+        width: 45px; /* Ajuste no tamanho dos ícones */
+        height: 45px;
+    }
+}
+
